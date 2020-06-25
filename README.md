@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WebVR Photosphere Viewer with Navigation Menu (deprecated)
 
 ## This theme is deprecated. Find the new one here: https://github.com/IdeaSpaceVR/IdeaSpace-360
@@ -34,3 +35,7 @@
 
 - A-Frame: https://aframe.io
 - Photo licenses: https://creativecommons.org/licenses/by/2.0/
+=======
+# galeria
+Galeria AR
+>>>>>>> origin/master
