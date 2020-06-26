@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WebVR Photosphere Viewer</title>
+    <title>Galeria 360°</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Fullscreen Landscape on iOS -->
@@ -17,7 +17,7 @@
     <meta property="og:image:secure_url" content="" />
     <meta property="og:image" content="" />
     <meta property="og:description" content="" />
-    <meta property="og:title" content="WebVR Photosphere Viewer" />
+    <meta property="og:title" content="Galeria 360" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
 
@@ -31,6 +31,7 @@
     <a-scene>
 
         <a-assets>
+            <audio src="musica/Unavailable.mp3" id="unavailable"></audio>
             <img src="images/reloj360.jpg" id="img-photosphere-1">
             <img src="images/reloj.jpg" id="img-photosphere-1-thumb">
             <img src="images/tambor360.jpg" id="img-photosphere-2">
@@ -93,7 +94,14 @@
             scale="-1 1 1"
             rotation="0 -60 0" id="photosphere">
         </a-entity>
-
+        <a-box id="yellow" color="#FFAA00" position="0.5 0.5 0.5" sound="src:#unavailable">
+            <!--Play -->
+            <a-sphere color="#00AA00" radius="0.25" position="-0.5 1 0" play>
+            </a-sphere>
+            <!--Stop-->
+            <a-sphere color="#AA0000" radius="0.25" position="0.5 1 0" stop>
+            </a-sphere>
+        </a-box> 
     </a-scene>
 
 </body>
