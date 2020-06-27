@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Galeria 360°</title>
-
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes"> 
 
@@ -21,10 +21,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
 
-    <script src="js/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <!--<script src="js/aframe.min.js"></script>-->
     <script src="js/components/isvr_photosphere_menu.js"></script>
     <script src="js/components/isvr_photosphere_menu_thumb.js"></script>
     <script src="js/components/isvr_photosphere_menu_navigation.js"></script>
+    
 </head>
 <body>
 
@@ -103,9 +105,11 @@
                          to="0 360 0"></a-animation>
           </a-entity>  
           <a-assets > <audio id = "unavailable" src = "musica/Unavailable.mp3" preload = "auto" > </audio > </a-assets >
-        <a-entity  sound = "src: #unavailable; autoplay:true" > </a-entity >  
-            
-    </a-scene>
+        <!--<a-entity  sound = "src: #unavailable; autoplay:true; positional:false" > </a-entity >             
+            <a-entity  cursor  position = "0 0 -5" > </a-entity >-->
+
+                <a-entity id="river" geometry="primitive: plane" material="src:images/logotectlaxiaco.png"
+                position="0 3 0" sound="src:musica/unavailable.mp3; autoplay: true"></a-entity>
 
 </body>
 </html>
