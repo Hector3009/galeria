@@ -91,11 +91,11 @@
         </a-entity>
         
         <a-entity 
-            sound="src: #unavailable; autoplay:true"
             geometry="primitive:sphere;radius:5000;segmentsWidth:64;segmentsHeight:64"
             material="shader:flat;color:#ffffff;fog:false; src:#img-photosphere-1 "
             scale="-1 1 1"
-            rotation="0 -60 0" id="photosphere">
+            rotation="0 -60 0" id="photosphere"
+            sound="src: #unavailable; autoplay:true">
         </a-entity>
         <a-entity obj-model="obj: #obj; mtl: #mtl" position="0 -2 -2">
             <a-animation attribute="rotation" dur="12000" easing="linear" repeat="indefinite"
