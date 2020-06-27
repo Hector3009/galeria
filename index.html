@@ -33,7 +33,7 @@
         <a-assets>
             <a-asset-item id="obj" src="logo/Log.obj"></a-asset-item>
             <a-asset-item id="mtl" src="logo/Log.mtl"></a-asset-item>
-            <audio src="musica/Unavailable.mp3" id="unavailable"></audio>
+            <!--<audio src="musica/Unavailable.mp3" id="unavailable"  preload = "auto"></audio>-->
             <img src="images/reloj360.jpg" id="img-photosphere-1">
             <img src="images/reloj.jpg" id="img-photosphere-1-thumb">
             <img src="images/tambor360.jpg" id="img-photosphere-2">
@@ -101,7 +101,9 @@
         <a-entity obj-model="obj: #obj; mtl: #mtl" position="0 -2 -2">
             <a-animation attribute="rotation" dur="12000" easing="linear" repeat="indefinite"
                          to="0 360 0"></a-animation>
-          </a-entity>    
+          </a-entity>  
+          <a-assets > <audio id = "unavailable" src = "musica/Unavailable.mp3" preload = "auto" > </audio > </a-assets >
+        <a-entity  sound = "src: #river" > </a-entity >  
     </a-scene>
 
 </body>
